@@ -38,7 +38,8 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "relativePath": "linkedStorageAccount.json"
+          "uri": "[uri(deployment().properties.templateLink.uri, 'linkedStorageAccount.json')]",
+          "contentVersion": "1.0.0.0"
         },
         "parameters": {
           "storageAccountName": {
